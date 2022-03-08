@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <title>Waves | hardik </title>
   <link rel="stylesheet" href="./style.css">
-  <
-	<script src ="script.js </script>
-
+  <script>
+	$(window).scroll(function(e){
+  parallax();
+});
+function parallax(){
+  var scrolled = $(window).scrollTop();
+  $('.bg').css('top',-(scrolled*0.2)+'px');
+}
+</script >
 </head>
 <body>
 
